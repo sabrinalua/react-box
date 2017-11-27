@@ -7,13 +7,17 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
- 
+
 class Main extends Component {
+  componentDidMount() {
+      setInterval(() => this.setState({ time: Date.now()}), 1000)
+ }
   render() {
     return (
       <HashRouter>
         <div>
           <h1>Simple SPA</h1>
+          <h6 align="right">It is now {new Date().toLocaleTimeString()}</h6>
           <ul className="header">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
@@ -28,6 +32,7 @@ class Main extends Component {
       </HashRouter>
     );
   }
+
 }
- 
+
 export default Main;
