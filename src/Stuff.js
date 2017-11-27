@@ -1,6 +1,10 @@
 import React, { Component } from "react";
- 
+
 class Stuff extends React.Component {
+  constructor(props){
+      super(props);
+      document.title = "React-Box::STUFF";
+  }
   render() {
     return (
       <div>
@@ -18,5 +22,5 @@ class Stuff extends React.Component {
     );
   }
 }
- 
+
 export default Stuff

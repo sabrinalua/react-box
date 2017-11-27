@@ -1,6 +1,10 @@
 import React, { Component } from "react";
- 
+
 class Home extends React.Component {
+  constructor(props){
+      super(props);
+      document.title = "React-Box::HOME";
+    }
   render() {
     return (
       <div>
@@ -11,11 +15,11 @@ class Home extends React.Component {
         metus nec massa. Maecenas hendrerit laoreet augue
         nec molestie. Cum sociis natoque penatibus et magnis
         dis parturient montes, nascetur ridiculus mus.</p>
- 
+
         <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
       </div>
     );
   }
 }
- 
+
 export default Home

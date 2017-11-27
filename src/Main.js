@@ -9,6 +9,7 @@ import Stuff from "./Stuff";
 import Contact from "./Contact";
 
 class Main extends Component {
+  
   componentDidMount() {
       setInterval(() => this.setState({ time: Date.now()}), 1000)
  }
