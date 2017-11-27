@@ -17,7 +17,7 @@ class Main extends Component {
       <HashRouter>
         <div>
           <h1>Simple SPA</h1>
-          <h6 align="right">It is now {new Date().toLocaleTimeString()}</h6>
+          <h6>{Intl.DateTimeFormat().resolvedOptions().timeZone} :: {new Date().toLocaleTimeString()}</h6>
           <ul className="header">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
